@@ -3,9 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>The Pepsi Man Universe</title>
+        <link rel="stylesheet" href="./css/lightbox.css">
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="./css/animations.css">
         <link rel="icon" type="image/x-icon" href="./favicon_io/android-chrome-512x512.png">
+        <script src="./JS/one_page_website.js"></script>
     </head>
 
     <body>
@@ -31,6 +33,76 @@
         </div>
     </div>
     <!--END HOME-->
+
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+    <div class="column">
+        <img src="./images/plant/plant1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/plant/plant2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/plant/plant3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/plant/plant4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./images/plant/plant small/plant1-small.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="./images/plant/plant small/plant2-small.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="./images/plant/plant small/plant3-small.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="./images/plant/plant small/plant4-small.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./images/plant/plant small/plant1-small.png" onclick="currentSlide(1)" alt="Nature">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/plant/plant small/plant2-small.png" onclick="currentSlide(2)" alt="Snow">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/plant/plant small/plant3-small.png" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/plant/plant small/plant4-small.png" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
+
 
     <!--GALLERY-->
     <section id="gallery">
